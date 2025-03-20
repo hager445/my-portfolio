@@ -1,0 +1,43 @@
+<div class="text-white w-screen">
+  <ul
+    class="py-3 md:gap-7 gap-3 sm:px-20 px-10 flex justify-between shadow-[0_3px_10px_#AC1754] rounded-[55px] w-[80%] sm:w-[60%] md:w-fit mt-10 mx-auto"
+  >
+    <li routerLink="/home" class="relative group">
+      <lucide-angular [img]="homeIcon" class="my-icon cursor-pointer">
+      </lucide-angular>
+      <span class="icon-name">Home</span>
+    </li>
+    <li routerLink="/aboutme" class="relative group">
+      <lucide-angular
+        [img]="infoIcon"
+        class="my-icon cursor-pointer hover:text-main"
+      >
+      </lucide-angular>
+      <span class="icon-name">Info</span>
+    </li>
+    <li routerLink="/projects" class="relative group">
+      <lucide-angular
+        [img]="projectsIcon"
+        class="my-icon cursor-pointer hover:text-main"
+      >
+      </lucide-angular>
+      <span class="icon-name">Projects</span>
+    </li>
+    <li routerLink="/skills" class="relative group">
+      <lucide-angular
+        [img]="skillsIcon"
+        class="my-icon cursor-pointer hover:text-main"
+      >
+      </lucide-angular>
+      <span class="icon-name">Skills</span>
+    </li>
+    <li routerLink="/contact" class="relative group">
+      <lucide-angular
+        [img]="contactIcon"
+        class="my-icon cursor-pointer hover:text-main"
+      >
+      </lucide-angular>
+      <span class="icon-name">Contact Me</span>
+    </li>
+  </ul>
+</div>

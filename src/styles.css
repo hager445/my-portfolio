@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+.main-color {
+  @apply text-[#AC1754];
+}
+.icon-name {
+  @apply content-['hager'] hidden text-[15px] text-nowrap  group-hover:block text-main top-[-150%] translate-x-[-50%] left-[50%] absolute font-bold  drop-shadow-2xl;
+}
+/* تخصيص الشريط بالكامل */
+::-webkit-scrollbar {
+  height: 2px; /* سمك السكرول الأفقي */
+  width: 2px;
+}
+
+/* تغيير لون المسار الخلفي للسكرول */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* لون الخلفية */
+}
+
+/* تغيير لون مقبض السكرول */
+::-webkit-scrollbar-thumb {
+  background: #ac1754; /* لون المقبض */
+  border-radius: 4px; /* زوايا ناعمة */
+}
+
+/* تغيير لون المقبض عند التفاعل (hover) */
+::-webkit-scrollbar-thumb:hover {
+  background: #98144b; /* لون أغمق عند المرور عليه */
+}
