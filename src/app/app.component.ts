@@ -55,11 +55,12 @@ export class AppComponent implements OnInit {
   };
   
   async ngOnInit() {
+    if (typeof window !== 'undefined') {
     const { tsParticles } = await import("@tsparticles/engine"); // ✅ استخراج `tsParticles` بشكل صحيح
     await loadSlim(tsParticles);
     this.flowbiteService.loadFlowbite(() => {
       initFlowbite();
-    });
+    });}
   }
   
   particlesLoaded(container: Container): void {
