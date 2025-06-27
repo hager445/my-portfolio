@@ -33,7 +33,7 @@ ngAfterViewInit() {
 }
 downloadFile():void{
  const link = document.createElement('a');
- link.href = '/assets/latest cv.pdf'
+ link.href = "/assets/hager's resume.pdf"
  link.download = 'cv.pdf'
  document.body.appendChild(link);
  link.click();
